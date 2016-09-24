@@ -1,0 +1,119 @@
+
+@import url("index1.css");
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+*,*:after,*:before{
+	box-sizing:border-box;
+}
+html,body{
+	width: 100%;
+
+}
+.selbox{
+	width: 100%;
+	padding: 10px;
+	section{
+		width: 100%;
+		height: 48px;
+		margin: 5%;
+		display: -webkit-flex;
+		h5{
+			width: 70px;
+			text-align: center;
+			line-height: 48px;
+			font-size: 20px;
+		}
+	
+	div{
+		-webkit-flex:1;
+		height: 48px;
+		margin-right: 10px;
+		position: relative;
+		label{
+			width: 90%;
+			height: 48px;
+
+			line-height: 48px;
+			background: #ccc;
+			position: absolute;
+		}
+		label::after{
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			right: 10px;
+			border:10px solid transparent;
+			border-top-color: #888;
+			top: 50px;
+			margin-top: -30px;
+		}
+		select{
+			position: absolute;
+			width: 100%;
+			height: 48px;
+			
+			opacity: 0;
+		}
+	}
+	}
+}
+.selbox div:last-child{
+	opacity:0
+}
+/* 上传文件 */
+
+
+	.selbox p{
+		height: 40px;
+		text-indent: 20px;
+		line-height: 40px;
+		border:1px solid #ccc;
+	}
+	.selbox article{
+		width: 100%;
+		#up_box{width: 100%;
+			display: -webkit-flex;
+			-webkit-flex-wrap:wrap;
+			li{
+				width: 25%;
+				border: 5px solid transparent;
+				height: 82px;
+				list-style: none;
+				position: relative;
+				
+			}
+		}
+	}
+	.up_img{
+		background: url(../img/upimg_loading.gif);
+		background-size: 100% 100%;
+		background-clip: padding-box;
+
+		a{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 15px;
+			height: 15px;
+			background: url(../img/upimg_x.png);
+			background-size: cover;
+			font-size: 0;
+		}
+	}
+	.up input{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+	}
+	.up  img{
+					width: 100%;
+					height: 100%;
+				}
